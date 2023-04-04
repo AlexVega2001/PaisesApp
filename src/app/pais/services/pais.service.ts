@@ -22,6 +22,11 @@ export class PaisService {
     return this.http.get<Country[]>(url);
   }
 
+  buscarRegion(termino: string): Observable<Country[]> {
+    const url = `${this.apiUrl}/region/${termino}`;
+    return this.http.get<Country[]>(url);
+  }
+
   obtenerPaisPorCodigo(id: string): Observable<Country[]> {
     const url = `${this.apiUrl}/alpha/${id}`;
     return this.http.get<Country[]>(url);
