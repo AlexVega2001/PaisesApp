@@ -19,7 +19,6 @@
 </div>
 
 <div *ngIf="countries.length > 0" class="row">
-    <div class="col">
-        <app-table [countries]="countries"></app-table>
-    </div>
+    <!-- <app-table [countries]="countries"></app-table> -->
+    <app-card [countries]="countries"></app-card>
 </div>

@@ -1,0 +1,14 @@
+<div class="d-flex flex-wrap justify-content-around gap-3">
+    <div class="card animate__animated animate__fadeIn animate__faster border border-dark"
+        style="width: 30%;" 
+        *ngFor="let country of countries; let i = index;">
+        <img [src]="country.flags.png" class="img-fluid" alt="">
+        <div class="card-body">
+            <h5 class="card-title">{{country.capital}}, {{country.name.common}}</h5>
+            <p class="card-text">
+                <strong>Población: </strong> {{ country.population | number }} 
+            </p>
+        </div>
+        <a [routerLink]="['/pais', country.cca3]" class="btn btn-primary m-2">Ver más..</a>
+    </div>
+</div>

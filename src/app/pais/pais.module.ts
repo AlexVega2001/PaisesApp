@@ -9,6 +9,7 @@ import { PorRegionComponent } from './pages/por-region/por-region.component';
 import { ListarPaisComponent } from './pages/listar-pais/listar-pais.component';
 import { TableComponent } from './components/table/table.component';
 import { SearchComponent } from './components/search/search.component';
+import { CardComponent } from './components/card/card.component';
 
 
 
@@ -19,7 +20,8 @@ import { SearchComponent } from './components/search/search.component';
     PorRegionComponent,
     ListarPaisComponent,
     TableComponent,
-    SearchComponent
+    SearchComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,

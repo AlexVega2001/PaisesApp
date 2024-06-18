@@ -20,7 +20,8 @@
 </div>
 
 <div *ngIf="countries.length > 0" class="row">
-    <div class="col">
-        <app-table [countries]="countries"></app-table>
+    <div class="my-3">
+        <!-- <app-table [countries]="countries"></app-table> -->
+        <app-card [countries]="countries"></app-card>
     </div>
 </div>
